@@ -1,0 +1,90 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929;
+    color: #f1f1f1;
+    padding: 0 2rem;
+
+}
+.header-nav{
+    display: flex;
+    max-width: 100%;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav ul{
+    display: flex;
+    gap: 2rem;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    margin: 2rem 0;
+}
+.flex-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    text-align: center;
+    gap: 1rem;
+}
+
+.flex-section article{
+    max-width: 600px;
+    min-width: 250px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+.flex-section article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+@media (max-width: 670px) {
+    .header-nav ul{
+        flex-direction: column;
+
+    }
+    .header-nav li{
+        background-color: #585858;
+        
+    }
+  }
